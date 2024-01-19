@@ -27,11 +27,50 @@ nav ul li {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    width: 30%; 
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+article {
+    flex: 1;
 }
 
 footer {
-    background-color: #6725d8;
+    background-color: #333333;
     color: white;
     padding: 1em;
     text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+.gallery {
+    border: none;
+    padding: 0;
 }
